@@ -1,13 +1,11 @@
-const Voluntario = require('../models/voluntario')
-const bcrypt = require ('bcrypt')
-const nodemailer = require ('nodemailer')
-const sendMail = require ('../../modules/contaCriada_mailer')
+const Voluntario = require('../models/voluntario');
+const bcrypt = require ('bcrypt');
+const nodemailer = require ('nodemailer');
 
 const cadastrarVol = async (req, res) => {
 
     const {nome, cpf, email, telefone, dt_nasc, senha, confirm_senha} = req.body;
 
-//checar se vol existe
     const volExiste = await Voluntario.findOne({ email: email })
 
     if(volExiste) {
@@ -37,9 +35,8 @@ const cadastrarVol = async (req, res) => {
             transporter.sendMail({
                 from: 'capibalimpo@gmail.com',
                 to: req.body.email,
-                subject: 'Conta Criada',
-                text: 'Nós do CampibaLimpo ficamos muito felizes em saber que você gostaria de fazer parte do nosso projeto! Acesse o site e marque uma data! :)',
-                html: "<stronger>Nós do CampibaLimpo ficamos muito felizes em saber que você gostaria de fazer parte do nosso projeto! Acesse o site e marque uma data! :)</stronger>"
+                subject: 'Conta Criada! :)',
+                text: `Olá ${voluntario.nome}, nós do CampibaLimpo ficamos muito felizes em saber que você gostaria de fazer parte do nosso projeto! Acesse o site e marque uma data! :)`
             }, (err, info) => {
                 console.log(info.envelope);
                 console.log(info.messageId);
@@ -50,7 +47,6 @@ const cadastrarVol = async (req, res) => {
         await Voluntario.create(voluntario)
         res.status(201).json({message: "Cadastro efetuado com sucesso!"})
 
-    
     }catch(error){
     
         message = "Não foi possível realizar o cadastro. Erro: " + error
@@ -145,6 +141,10 @@ const deletarVol = async (req, res) => {
 
     }
 
+}
+
+const recSenha = async (req, res) => {
+    
 }
 
 module.exports = {cadastrarVol, exibirVol, atualizarVol, deletarVol}

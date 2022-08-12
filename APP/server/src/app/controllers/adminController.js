@@ -1,7 +1,8 @@
-const Apoiador = require('../models/apoiador')
-const Admin = require('../models/admin')
-const Evento = require('../models/evento')
-const bcrypt = require('bcrypt')
+const Apoiador = require('../models/apoiador');
+const Admin = require('../models/admin');
+const Evento = require('../models/evento');
+const bcrypt = require('bcrypt');
+const nodemailer = require('nodemailer');
 
 // login
 const cadastroAdmin = async (req, res) => {
@@ -145,10 +146,31 @@ const apoAprovado = async (req, res) => {
 
     const id = req.params.id
 
-    const {avaliacao} = req.body;
+    const {nome, email, avaliacao} = req.body;
     const avaliar = {
-        avaliacao
+        nome,
+        email,
+        avaliacao,
     };
+
+    const transporter = nodemailer.createTransport({
+        port: 465,
+        host: "smtp.gmail.com",
+        auth: {
+          user: "capibalimpo@gmail.com",
+          pass: "zhwamuvdlxzpwlll",
+        },
+        secure: true,
+      });
+      transporter.sendMail({
+          from: 'capibalimpo@gmail.com',
+          to: req.body.email,
+          subject: 'Solicitação aprovada! :)',
+          text: `Olá ${avaliar.nome}, nós do CampibaLimpo ficamos muito felizes em informar que sua solicitação foi aceita com sucesso pela nossa equipe!`
+      }, (err, info) => {
+          console.log(info.envelope);
+          console.log(info.messageId);
+      })
 
     try {
 
@@ -176,11 +198,32 @@ const apoNegado = async (req, res) => {
 
     const id = req.params.id
 
-    const {avaliacao, justificativa} = req.body;
+    const {nome, email, avaliacao, justificativa} = req.body;
     const avaliar = {
+        nome,
+        email,
         avaliacao,
         justificativa
     };
+
+    const transporter = nodemailer.createTransport({
+        port: 465,
+        host: "smtp.gmail.com",
+        auth: {
+          user: "capibalimpo@gmail.com",
+          pass: "zhwamuvdlxzpwlll",
+        },
+        secure: true,
+      });
+      transporter.sendMail({
+          from: 'capibalimpo@gmail.com',
+          to: req.body.email,
+          subject: 'Solicitação negada! :(',
+          text: `Olá ${avaliar.nome}, nós do CampibaLimpo ficamos muito agradecidos por ter enviado sua solicitação mas infelizmente não foi aceita :(\n\n Justificativa: \n\n${avaliar.justificativa} `
+      }, (err, info) => {
+          console.log(info.envelope);
+          console.log(info.messageId);
+      })
 
     try {
 

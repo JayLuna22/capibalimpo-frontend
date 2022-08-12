@@ -1,4 +1,4 @@
-const Apoiador = require('../models/apoiador')
+const Apoiador = require('../models/apoiador');
 
 const formsApo = async (req, res) => {
 
@@ -9,6 +9,25 @@ const formsApo = async (req, res) => {
         cnpj,
         mensagem
     };
+
+    const transporter = nodemailer.createTransport({
+        port: 465,
+        host: "smtp.gmail.com",
+        auth: {
+          user: "capibalimpo@gmail.com",
+          pass: "zhwamuvdlxzpwlll",
+        },
+        secure: true,
+      });
+      transporter.sendMail({
+          from: 'capibalimpo@gmail.com',
+          to: req.body.email,
+          subject: 'Solicitação em análise :)',
+          text: `Olá ${apoiador.nome}, nós do CampibaLimpo ficamos muito felizes em saber que você gostaria de fazer parte do nosso projeto! Estaremos avaliando a sua solicitação e enviando uma resposta nos próximos dias :)`
+      }, (err, info) => {
+          console.log(info.envelope);
+          console.log(info.messageId);
+      })
 
     try {
 
@@ -24,6 +43,4 @@ const formsApo = async (req, res) => {
 
 }
 
-module.exports = {
-    formsApo
-}
+module.exports = {formsApo}
