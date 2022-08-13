@@ -17,7 +17,8 @@ const TelaCadastro = () => {
             <div className="container">
                 <div className='card-cadastro'>
                   <div className='box-cadastro'>
-                    <h2>Crie sua conta</h2>
+                    <p className='cadastro-title' >Crie sua conta</p>
+                    
                     <form id="register-form">
                         <div className="user-box">
                             <input className="input-texto" type="text" placeholder="Digite seu nome completo" name="nome" id="nome"/>
@@ -30,10 +31,10 @@ const TelaCadastro = () => {
                         </div>
                         <div className="btn-cadastro">
                             <button type="submit" className="botao-submit">
-                                <b>CONFIRMAR</b>
+                                <p>Confirmar</p>
                             </button>
                             <button type="reset" className="botao-submit">
-                                <b>Cancelar</b>
+                                <p>Cancelar</p>
                             </button>
                         </div>
                     </form>
