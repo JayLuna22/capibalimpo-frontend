@@ -5,6 +5,7 @@ import TelaInicial from './pages/tela-inicial.js';
 import Home from './pages/home.js'
 import Cadastro from './pages/tela-cadastro.js'
 import Login from './pages/tela-login.js'
+import Perfil from './pages/tela-perfil'
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
           <Route path='/home' element={<Home />} />
           <Route path='/cadastro' element={<Cadastro />} />
           <Route path='/login' element={<Login />} />
+          <Route path='/perfil'element={<Perfil />} />
         </Routes>
       </div>
     );

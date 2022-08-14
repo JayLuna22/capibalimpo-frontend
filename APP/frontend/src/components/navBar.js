@@ -3,6 +3,7 @@ import './../css/navBar.css';
 
 
  const NavBar = () =>{
+    
     return (
         <div>
             <nav class="navigation">
