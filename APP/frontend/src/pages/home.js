@@ -29,7 +29,7 @@ const Home = () => {
         <DataTable />
             <div>
                 <button href="#" class="home-btn-schedule">
-                        Agendar uma data
+                        Agendar uma Data
                 </button>
             </div>
         </div>
