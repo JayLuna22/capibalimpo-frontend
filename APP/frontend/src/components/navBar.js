@@ -3,6 +3,7 @@ import './../css/navBar.css';
 import icon from '../imagens/icon-perfil.png';
 
  const NavBar = () =>{
+    
     return (
         <div>
             <nav class="navigation">
