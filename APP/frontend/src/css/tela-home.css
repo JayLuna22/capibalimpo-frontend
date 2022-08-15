@@ -27,6 +27,11 @@ body{
 .home-text{
     max-width: 37rem;
 }
+.text-h4{
+    font-size: 1.5rem;
+    color:#78ae62;
+    margin-bottom: 1rem;
+}
 .home-text .text-h4{
     font-size: 1.5rem;
     color:#78ae62;
@@ -109,4 +114,22 @@ body{
     .home-img{
         width: 125%;
     }
+}
+
+.home-btn-schedule {
+    margin-top: 20px;
+    padding: 15px 45px;
+    background: var(--green);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.5s;
+    border: solid;
+    float: right;
+    cursor: pointer;
+    margin-right: 25%;
+}
+
+.home-btn-schedule:hover{
+    background: #a29d7f;
 }

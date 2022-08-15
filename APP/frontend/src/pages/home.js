@@ -2,6 +2,7 @@ import React from 'react';
 import './../css/tela-home.css';
 import logoHome from '../imagens/logo.png';
 import NavBar from '../components/navBar'; 
+import DataTable from '../components/tela-agenda';
 
 const Home = () => {
     return (
@@ -21,7 +22,20 @@ const Home = () => {
                     </div>
                 </section>
             </main>
+        <div>
+        <div>
+            <h4 class="text-h4">Escolha uma Data:</h4>
+        </div>
+        <DataTable />
+            <div>
+                <button href="#" class="home-btn-schedule">
+                        Agendar uma data
+                </button>
+            </div>
+        </div>
         </div>
     )
 }
+
+
 export default Home;
