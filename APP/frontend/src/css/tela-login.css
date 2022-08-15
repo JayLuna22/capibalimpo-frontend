@@ -59,6 +59,17 @@
     background-color: transparent;
 }
 
+.resgatar {
+    font-size: 11px;
+    background: none;
+    text-align: end;
+    cursor: pointer;
+}
+
+.resgatar:hover{
+    color: red;
+}
+
 .inputTL {
     height: 40px;
     border: 2px solid #d6d6d6;
