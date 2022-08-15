@@ -29,8 +29,8 @@
     border-width: 1px;
     border-radius: 10px;
     border-color: #757575;
-
 }
+
 .login-title {
     background-color: transparent;
     padding-top: 30px;
@@ -57,6 +57,17 @@
     color: #000000;
     margin-bottom: 5px;
     background-color: transparent;
+}
+
+.resgatar {
+    font-size: 11px;
+    background: none;
+    text-align: end;
+    cursor: pointer;
+}
+
+.resgatar:hover{
+    color: red;
 }
 
 .inputTL {
