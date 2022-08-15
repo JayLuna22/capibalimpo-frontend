@@ -2,53 +2,54 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 18px 40px;
+    padding: 12px 60px 12px 60px;
     box-shadow: 0 0.1rem 0.5rem rgb(168, 168, 184);
     width: 100%;
-    background: var(--white);
     transition: all 0.5s;
     position: fixed;
 }
-.navigation .logo{
+
+.logo{
     color: #95a868;
     font-size: 1.7rem;
     font-weight: 600;
+    margin-right: 60px;
 }
-.logo span{
-    color: var(--dark);
-}
-.navigation ul{
+
+.nav-menu{
     display: flex;
     align-items: center;
     gap: 5rem;
 }
-.navigation ul li a{
-    color: var(--dark);
-    font-size: 17px;
-    font-weight: 500;
-    transition: all 0.5s;
-}
-.navigation ul li a:hover{
-    color: var(--red);
-}
-.navigation i{
+
+.nav-item{
+    min-width: none;
+    max-width: 250px;
+    width: auto;
     cursor: pointer;
     font-size: 1.5rem;
 }
-.menu{
-    cursor: pointer;
-    display: none;
+
+.nav-item a{
+    color: #353535;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s;
+
 }
-.menu .bar{
-    display: block;
-    width: 28px;
-    height: 3px;
-    border-radius: 3px;
-    background: var(--dark);
-    margin: 5px auto;
-    transition: all 0.3s;
+
+.nav-item a:hover{
+    color: #78ae62;
 }
-.menu .bar:nth-child(1),
-.menu .bar:nth-child(3){
-    background: var(--red);
+
+.nav-icon {
+    min-width: none;
+    max-width: 250px;
+    width: auto;
+
+}
+
+.icon-p{
+    width: 18%;
+    border-radius: 50%;
 }
