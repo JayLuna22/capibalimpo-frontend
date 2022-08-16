@@ -1,6 +1,7 @@
 import React from 'react';
 import './../css/tela-cadastro.css';
 import logoTela from '../imagens/icon-login.png';
+import Footer from '../components/footer';
 
 // import bootstrap from './assets/bootstrap/css/bootstrap.css'
 
@@ -16,30 +17,33 @@ const TelaCadastro = () => {
             </div>
             <div className="container">
                 <div className='card-cadastro'>
-                  <div className='box-cadastro'>
-                    <p className='cadastro-title' >Crie sua conta</p>
-                    
-                    <form id="register-form">
-                        <div className="user-box">
-                            <input className="input-texto" type="text" placeholder="Digite seu nome completo" name="nome" id="nome"/>
-                            <input className="input-texto" type="text" placeholder="Digite seu CPF ex: 000.000.000-00" name="cpf" id="cpf"/>
-                            <input className="input-texto" type="email" placeholder="E-mail" name="email" id="email"/>
-                            <input className="input-texto" type="text" placeholder="Digite seu telefone" name="telefone" id="telefone"/>
-                            <input className="input-texto" type="date" placeholder="Data de Nascimento" name="data de nascimento" id="data de nascimento"/>
-                            <input className="input-texto" type="password" placeholder="Senha" name="senha" id="senha"/>
-                            <input className="input-texto" type="password" placeholder="Confirmar senha" name="senha" id="senha"/>
-                        </div>
-                        <div className="btn-cadastro">
-                            <button type="submit" className="botao-submit">
-                                <p>Confirmar</p>
-                            </button>
-                            <button type="reset" className="botao-submit">
-                                <p>Cancelar</p>
-                            </button>
-                        </div>
-                    </form>
+                    <div className='box-cadastro'>
+                        <p className='cadastro-title'>Crie sua conta</p>
+
+                        <form id="register-form">
+                            <div className="user-box">
+                                <input className="input-texto" type="text" placeholder="Digite seu nome completo" name="nome" id="nome"/>
+                                <input className="input-texto" type="text" placeholder="Digite seu CPF ex: 000.000.000-00" name="cpf" id="cpf"/>
+                                <input className="input-texto" type="email" placeholder="E-mail" name="email" id="email"/>
+                                <input className="input-texto" type="text" placeholder="Digite seu telefone" name="telefone" id="telefone"/>
+                                <input className="input-texto" type="date" placeholder="Data de Nascimento" name="data de nascimento" id="data de nascimento"/>
+                                <input className="input-texto" type="password" placeholder="Senha" name="senha" id="senha"/>
+                                <input className="input-texto" type="password" placeholder="Confirmar senha" name="senha" id="senha"/>
+                            </div>
+                            <div className="btn-cadastro">
+                                <button type="submit" className="botao-submit">
+                                    <p>Confirmar</p>
+                                </button>
+                                <button type="reset" className="botao-submit">
+                                    <p>Cancelar</p>
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
+            </div>
+            <div>
+                <Footer/>
             </div>
         </div>
 

@@ -1,0 +1,139 @@
+
+.fundo-perfil{
+    width: 100;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.container-perfil{
+    width: 30%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #c7f0e067;
+    border-radius: 10px;
+    box-shadow:  11px -11px 21px #a3c5b8,
+             -11px 11px 21px #ebffff;
+}
+
+.topo-perfil{
+    height: 22.5vh;
+    background-color: transparent;
+    padding: 2%;
+}
+
+.card-foto{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+    float: left;
+}
+
+.foto-perfil{
+    height: 100%;
+    background-color: transparent;
+}
+
+.usuario-perfil{
+    width: 50%;
+    height: 70%;
+    margin-top: 9%;
+    background-color: transparent;
+    float: right;
+    padding-right: 2%;
+}
+.usuario-perfil h2{
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: system-ui, sans-serif;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+.usuario-perfil h4{
+    font-size: 1rem;
+    text-align: center;
+    font-family: system-ui, sans-serif;
+    font-weight: 400;
+    background-color: transparent;
+}
+.title-info{
+    font-size: 1rem;
+    text-align: center;
+    font-family: system-ui, sans-serif;
+    font-weight: 600;
+    background-color: transparent;
+    padding-bottom: 6%;
+}
+
+.title-info b{
+    background-color: transparent;
+    padding: 1%;
+}
+
+.info-perfil{  
+    position: relative;   
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;   
+    
+    font-size: 1rem;
+    text-align: center;
+    font-family: system-ui, sans-serif;
+    font-weight: 400;
+    background-color: transparent;
+}
+
+.input-texto {
+    height: 40px;
+    border: 2px solid #d6d6d6;
+    border-radius: 5px;
+    width: 22vw;
+    margin-bottom: 6px;
+}
+
+.input-texto:hover {
+    border: 2px solid #78ae62;
+    border-radius: 5px;
+    width: 22vw;
+    
+}
+.botoes{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30%;
+    background-color: transparent;
+}
+
+.botao-perfil{
+    width: 12vw;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 7px;
+    border: none;
+    background-color: rgba (53, 53, 53, 0.068);
+    color: black;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.botao-perfil:hover{
+    background-color: #00e772;
+    color: white;
+    box-shadow: black;
+}
+
+.user-box{
+    position: relative;
+}
