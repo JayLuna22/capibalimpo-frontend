@@ -1,0 +1,61 @@
+ #divApoiadores {
+      margin-top: 4px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 8%;
+  }
+  
+.nome-empresa{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+  }
+
+  .nome-empresa b {
+    background-color: transparent;
+  }
+  
+.pontos{
+      font-size: 17px;
+      margin-right: 26px;
+  }
+  
+.brinde{
+      font-size: 17px;
+  }
+  
+  
+.icon-colaborador {
+      cursor: pointer;
+      width: 80%;
+      margin: -46px;
+      margin-bottom: 10px;
+      border-radius: 50%;
+    }
+  
+.button-colaborador {
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    height: 350px;
+    background: #d9d9d9;
+    border-radius: 9em;
+  }
+
+.button-colaborador:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+  .button-colaborador:hover {
+    background-color: #00e772;
+    color: white;
+    box-shadow: black;
+  }
+
+  .titulo-empresa {
+    background-color: #d9d9d9;
+  }

@@ -1,10 +1,11 @@
 import React from "react";
+import '../css/footer.css'
 
 const Footer = () =>{
     return (
         <div>
             <footer>
-                Projeto 
+                Desenvolvido por 5dev @ Todos os direitos reservados.
             </footer>
         </div>
 

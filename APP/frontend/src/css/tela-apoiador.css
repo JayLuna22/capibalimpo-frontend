@@ -2,7 +2,32 @@ textarea{
     height: 150px;
     border: 2px solid #d6d6d6;
     border-radius: 5px;
-    width: 300px;
+    width: 20vw;
     margin-bottom: 6px;
 }
+.input-msg{
+border-radius: 5px;
+width: 22vw;
+max-width: 22vw;
+margin-bottom: 6px;
+}
+.input-msg:hover {
+border: 2px solid #78ae62;
+border-radius: 5px;
+width: 22vw;
+
+}
+.botao-submit {
+width: 12vw;
+margin-top: 20px;
+margin-bottom: 5px;
+padding: 7px;
+border: none;
+background-color: rgba(53, 53, 53, 0.068);
+color: black;
+border-radius: 15px;
+cursor: pointer;
+font-family: system-ui, sans-serif;
+}
+
 
