@@ -26,7 +26,10 @@ const TelaPerfil = () => {
                     <label className='title-info' >
                        <b>Suas informações</b>
                     </label>
-                    <div className="user-box">
+
+
+                    
+        <div className="user-box">
                         <input readonly type="text" id="info" className="input-texto" value="Jay Luna"/> 
                         <input readonly type="text" id="info" className="input-texto" value="000.000.000-00"/>  
                         <input readonly type="text" id="info" className="input-texto" value="jayluna@gmail.com"/>  

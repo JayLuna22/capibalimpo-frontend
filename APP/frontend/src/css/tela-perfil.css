@@ -14,13 +14,11 @@
     height: 85vh;
     display: flex;
     flex-direction: column;
-    /* margin-left: 30%;
-    padding: 5px;  */
-    background-color: #c7f0e0a6;
-    border-style: none;
-    border-width: 1px;
+    background-color: #c7f0e067;   
+
     border-radius: 10px;
-    border-color: #757575;
+    box-shadow:  11px -11px 21px #a3c5b8,
+             -11px 11px 21px #ebffff;
 }
 
 .topo-perfil{

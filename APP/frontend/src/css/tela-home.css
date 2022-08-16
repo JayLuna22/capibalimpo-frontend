@@ -43,7 +43,7 @@ body{
 }
 .home-btn{
     padding: 15px 45px;
-    background: var(--green);
+    background: #78ae62;
     color: rgb(255, 255, 255);
     border-radius: 10px;
     font-weight: 700;
