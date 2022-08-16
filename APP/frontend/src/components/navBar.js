@@ -9,17 +9,21 @@ import MenuItem from '@mui/material/MenuItem';
     return (
         <div>
             <nav class="navigation">
-            <a href="#" class="logo">CapibaLimpo</a>
+            <a href="/home" class="logo">CapibaLimpo</a>
             <ul class="nav-menu">
-                <li class="nav-item"><a href="#">Home</a></li>
-                <li class="nav-item"><a href="#">Agendar uma data</a></li>
-                <li class="nav-item"><a href="#">Parceiros</a></li>
+                <li class="nav-item"><a href="/home">Home</a></li>
+                <li class="nav-item"><a href="/agendamento">Agendamento</a></li>
+                <li class="nav-item"><a href="/colaboradores">Apoiadores</a></li>
                 <li class="nav-item"><a href="/sobre">Sobre nós</a></li>
-               
-            </ul>
-                            <a className="nav-icon" href="#">
+                <li class="nav-icon">
+                            <a href="/perfil">
                                 <img class="icon-p" src={icon} />
                             </a>
+                    </li>
+                <li className="nav-item-nome"><a href="#">Olá, Jay!</a>
+                </li>
+            </ul>
+
             </nav>
         </div>
     )

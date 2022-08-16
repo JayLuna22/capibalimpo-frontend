@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 12px 60px 12px 60px;
+    padding: 10px 60px 12px 60px;
     box-shadow: 0 0.1rem 0.5rem rgb(168, 168, 184);
     width: 100%;
     transition: all 0.5s;
@@ -11,32 +11,42 @@
 
 .logo{
     color: #95a868;
-    font-size: 1.7rem;
+    font-size: clamp(0.7rem , 1.6rem, 1.8rem);
     font-weight: 600;
-    margin-right: 60px;
+    margin-right: 6%;
 }
 
 .nav-menu{
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 65%;
-    /* gap: 5rem; */
-}
+    justify-content: space-between;
+    background-color: transparent;
 
+}
 .nav-item{
-    min-width: none;
-    /* max-width: 250px; */
+    min-width: 5%;
+    max-width: 25%;
     width: auto;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: clamp(0.5rem , 1.4rem, 1.5rem);
+    background-color: transparent;
+}
+
+.nav-item-nome {
+    font-size: 1rem;
+    color: #232e29;
 }
 
 .nav-item a{
-    color: #353535;
-    font-size: 17px;
+    min-width: 5%;
+    max-width: 25%;
+    color: #0e181b5e;
+    font-size: clamp(0.5rem , 1.4rem, 1.5rem);
     font-weight: 500;
     transition: all 0.5s;
+    background-color: transparent;
 
 }
 
@@ -45,12 +55,11 @@
 }
 
 .nav-icon {
-    max-width: 50px;
-    min-width: 50px;
-    min-height: 50px;
-    max-height: 50px;
-    margin-left: 20px
-}
+    border-radius: 50%;
+    max-width: 45px;
+    width: 6%;
+    height: 6%;
+    margin-left: 14%;
 
 .nav-icon img {
     max-width: 50px;
@@ -60,49 +69,6 @@
 }
 
 .icon-p{
-    width: 18%;
+    width: 100%;
     border-radius: 50%;
-}
-
-
-@media (max-width:863px) {
-    .navigation{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 12px 30px 12px 30px;
-        box-shadow: 0 0.1rem 0.5rem rgb(168, 168, 184);
-        width: 100%;
-        transition: all 0.5s;
-        position: fixed;
-    }
-    
-.logo{
-    color: #95a868;
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-right: 30px;
-}
-    .nav-item a{
-        color: #353535;
-        font-size: 14px;
-        font-weight: 500;
-        transition: all 0.5s;
-    
-    }
-
-    .nav-icon {
-        max-width: 35px;
-        min-width: 35px;
-        min-height: 35px;
-        max-height: 35px;
-        margin-left: 20px
-    }
-    
-    .nav-icon img {
-        max-width: 35px;
-        min-width: 35px;
-        min-height: 35px;
-        max-height: 35px;
-    }
 }

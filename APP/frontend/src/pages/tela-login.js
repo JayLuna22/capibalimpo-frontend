@@ -1,6 +1,7 @@
 import React from 'react';
 import './../css/tela-login.css';
 import TelaLogin from '../imagens/icon-login.png'
+import Footer from '../components/footer';
 
 const Login = () => {
     return (
@@ -13,7 +14,7 @@ const Login = () => {
             <div className="login-box">
                 <div className="card-login">
                     <p className="login-title">Olá, faça seu login</p>
-                    
+
                     <div className="textfield">
                         <label className='labelTL' for="user">Usuário</label>
                         <input className='inputTL' type="text" name="user" placeholder="Digite seu Usuário"/>
@@ -22,7 +23,10 @@ const Login = () => {
                         <label className='labelTL' for="password">Senha</label>
                         <input className='inputTL' type="password" name="password" Placeholder="Digite sua senha"/>
                     </div>
-                    <p className='resgatar'>Esqueceu sua senha?</p>
+
+                    <a className='link-resgatar' href='#'>
+                        <p className='resgatar'>Esqueceu sua senha?</p>
+                    </a>
                     <div className='card-buttons'>
                         <button className="buttonTL">
                             <a href="/home">
@@ -36,6 +40,9 @@ const Login = () => {
                         </button>
                     </div>
                 </div>
+            </div>
+            <div>
+                <Footer/>
             </div>
         </div>
     )
