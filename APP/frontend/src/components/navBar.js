@@ -14,7 +14,7 @@ import icon from '../imagens/icon-perfil.png';
                 <li class="nav-item"><a href="#">Parceiros</a></li>
                 <li class="nav-item"><a href="#">Sobre nós</a></li>
                 <li class="nav-icon">
-                            <a href="#">
+                            <a href="/perfil">
                                 <img class="icon-p" src={icon} />
                             </a>
                     </li>
