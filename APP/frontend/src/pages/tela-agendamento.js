@@ -34,6 +34,11 @@ const TelaAgendamento = () => {
                         <td>Capibar</td>
                     </tr>
                 </table>
+                <div>
+                    <button>
+                        <a href="#" className="home-btn">Agendar</a>
+                    </button>
+                </div>
             </div>
         </div>
     )
