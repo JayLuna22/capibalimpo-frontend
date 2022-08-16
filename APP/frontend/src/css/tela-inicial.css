@@ -23,16 +23,16 @@
 
 a{
     text-decoration: none;
-    color: none;
+    color: inherit;
 }
 
 
 .button{
     margin-top: 20px;
     margin-bottom: 5px;
-    padding: 7px;
+    padding: 10px;
     border: none;
-    background: rgba(126, 1, 1, 0.034);
+    background: rgba(53, 53, 53, 53, 0.068);
     color: black;
     border-radius: 50px;
     cursor: pointer;

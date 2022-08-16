@@ -1,8 +1,6 @@
 import React from 'react';
 import './../css/tela-perfil.css';
 import logoPerfil from '../imagens/voluntario.png';
-import {Route} from 'react-router-dom';
-import { text } from 'express';
 
 const TelaLogin = () => {
 
@@ -31,11 +29,7 @@ const TelaLogin = () => {
                        <b>Suas informações</b>
                     </label>
 
-                    <input type='text' className='info-perfil'  readOnly placeholder='Jay Luna da Silva'/>
-                    <input type='text' className='info-perfil'  placeholder='jayluna@gmail.com'/>
-                    <input type='text' className='info-perfil'  placeholder='000.000.000-00'/>
-                    <input type='text' className='info-perfil'  placeholder='81 98514-9868'/> 
-                    <input type='date' className='info-perfil'  placeholder='12/03/1998'/>
+                    
                 </div>
 
                 <div className='botao-perfil'>
