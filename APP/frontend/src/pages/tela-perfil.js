@@ -1,10 +1,8 @@
 import React from 'react';
 import './../css/tela-perfil.css';
 import logoPerfil from '../imagens/voluntario.png';
-import {Route} from 'react-router-dom';
-import { text } from 'express';
 
-const TelaLogin = () => {
+const TelaPerfil = () => {
 
     return (
         <div className='fundo-perfil'>
@@ -16,7 +14,6 @@ const TelaLogin = () => {
                             src={logoPerfil}
                             alt="foto-perfil"/>
                     </div>
-
                     <div className='usuario-perfil'>
                         <h2>
                             Jay Luna da Silva</h2>
@@ -25,36 +22,33 @@ const TelaLogin = () => {
                             300 pontos</h4>
                     </div>
                 </div>
-
                 <div className='info-perfil'>
                     <label className='title-info' >
                        <b>Suas informações</b>
                     </label>
-
-                    <input type='text' className='info-perfil'  readOnly placeholder='Jay Luna da Silva'/>
-                    <input type='text' className='info-perfil'  placeholder='jayluna@gmail.com'/>
-                    <input type='text' className='info-perfil'  placeholder='000.000.000-00'/>
-                    <input type='text' className='info-perfil'  placeholder='81 98514-9868'/> 
-                    <input type='date' className='info-perfil'  placeholder='12/03/1998'/>
+                    <div className="user-box">
+                        <input readonly type="text" id="info" className="input-texto" value="Jay Luna"/> 
+                        <input readonly type="text" id="info" className="input-texto" value="000.000.000-00"/>  
+                        <input readonly type="text" id="info" className="input-texto" value="jayluna@gmail.com"/>  
+                        <input readonly type="text" id="info" className="input-texto" value="(81) 99637-6231"/>
+                        <input readonly type="text" id="info" className="input-texto" value="06/09/1994"/> 
+                    </div>                
                 </div>
-
-                <div className='botao-perfil'>
+                <div className='botoes'>
                     <button type='button' className='botao-perfil'>
-                        <p>
-                            Alterar dados cadastrais</p>
-                        {/* criar tela de alterar dados, repetir a de cadastro */} </button>
+                        <a href='#'> 
+                            <p>Alterar dados cadastrais</p>
+                        </a>
+                    </button>
                     <button type="button" className="botao-perfil">
                         <a href='/home'>
                             <p>Sair</p>
                         </a>
                     </button>
-
                 </div>
-
-
             </div>
         </div>
-
     )
+
 }
-export default TelaLogin;
+export default TelaPerfil;
