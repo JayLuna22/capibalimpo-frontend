@@ -28,7 +28,7 @@
     border-radius: 10px;
     box-shadow:  11px -11px 21px #a3c5b8,
              -11px 11px 21px #ebffff;
-   
+ 
 }
 
 .login-title {
@@ -57,6 +57,18 @@
     color: #000000;
     margin-bottom: 5px;
     background-color: transparent;
+}
+
+.resgatar {
+    font-size: 11px;
+    background: none;
+    margin-left: 20px;
+    text-align: end;
+    cursor: pointer;
+}
+
+.resgatar:hover{
+    color: red;
 }
 
 .inputTL {

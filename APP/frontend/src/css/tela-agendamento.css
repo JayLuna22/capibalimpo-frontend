@@ -1,0 +1,32 @@
+table {
+    margin: auto;
+    width: 100%;
+    padding: 10%;
+}
+
+th, td {
+    border: 1px #ddd;
+    padding: 8px;   
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    background-color: rgba(221, 221, 221, 0.26);
+    border-radius: 5px;
+}
+
+tr:hover {background-color: rgb(135, 182, 235);}
+
+th {
+  background-color: #04AA6D;
+  color: white;
+}
+
+input {
+    cursor: pointer;
+}
+
+button{
+    border: none;
+    margin-right: 10%;
+    float: right;
+    margin-top: -5%;
+}
