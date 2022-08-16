@@ -22,7 +22,8 @@ const Login = () => {
                         <label className='labelTL' for="password">Senha</label>
                         <input className='inputTL' type="password" name="password" Placeholder="Digite sua senha"/>
                     </div>
-                    <p className='resgatar'>Esqueceu sua senha?</p>
+        
+                    <a className='link-resgatar' href= '#'> <p className='resgatar'>Esqueceu sua senha?</p> </a>
                     <div className='card-buttons'>
                         <button className="buttonTL">
                             <a href="/home">
