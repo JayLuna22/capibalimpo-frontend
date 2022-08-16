@@ -6,6 +6,7 @@ import Home from './pages/home.js'
 import Cadastro from './pages/tela-cadastro.js'
 import Login from './pages/tela-login.js'
 import Apoiador from './pages/tela-apoiador';
+import TelaAgendamento from './pages/tela-agendamento'
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
           <Route path='/cadastro' element={<Cadastro />} />
           <Route path='/login' element={<Login />} />
           <Route path='/apoio' element={<Apoiador />} />
+          <Route path='/agendamento' element={<TelaAgendamento />} />
         </Routes>
       </div>
     );
