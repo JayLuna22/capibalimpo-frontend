@@ -32,7 +32,7 @@ a{
     margin-bottom: 5px;
     padding: 10px;
     border: none;
-    background: rgba(53, 53, 53, 53, 0.068);
+    background: rgba(53, 53, 53, 0.068);
     color: black;
     border-radius: 50px;
     cursor: pointer;
@@ -47,7 +47,7 @@ a{
 }
 
 .button:hover{
-    background-color: #7fda89;
+    background-color: #00e772;
     color: white;
     box-shadow: black;
 }
