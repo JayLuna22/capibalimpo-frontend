@@ -6,10 +6,15 @@ import Home from './pages/home.js'
 import Cadastro from './pages/tela-cadastro.js'
 import Login from './pages/tela-login.js'
 import Apoiador from './pages/tela-apoiador';
+import About from './pages/tela-sobre.js'
+
+import NavBar from '../src/components/navBar';
+
 
 class App extends Component {
   render() {
     return (
+
       <div className="App">
         <Routes>
           <Route exact path='/' element={<TelaInicial />} />
@@ -17,6 +22,7 @@ class App extends Component {
           <Route path='/cadastro' element={<Cadastro />} />
           <Route path='/login' element={<Login />} />
           <Route path='/apoio' element={<Apoiador />} />
+          <Route path='/sobre' element={<About />} />
         </Routes>
       </div>
     );
