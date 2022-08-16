@@ -24,7 +24,7 @@ input {
     cursor: pointer;
 }
 
-button{
+.button-1{
     border: none;
     margin-right: 10%;
     float: right;

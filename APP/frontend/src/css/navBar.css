@@ -20,7 +20,7 @@
     width: 90%;
     display: flex;
     align-items: center;
-    gap: 5rem;
+    justify-content: space-between;
     background-color: transparent;
 
 }
@@ -34,10 +34,15 @@
     background-color: transparent;
 }
 
+.nav-item-nome {
+    font-size: 1rem;
+    color: #232e29;
+}
+
 .nav-item a{
     min-width: 5%;
     max-width: 25%;
-    color: #6b59595e;
+    color: #0e181b5e;
     font-size: clamp(0.5rem , 1.4rem, 1.5rem);
     font-weight: 500;
     transition: all 0.5s;
@@ -56,11 +61,11 @@
     width: 6%;
     height: 6%;
     margin-left: 14%;
-    margin-right: 12px;
 
 }
 
 .icon-p{
     width: 100%;
     border-radius: 50%;
+    
 }

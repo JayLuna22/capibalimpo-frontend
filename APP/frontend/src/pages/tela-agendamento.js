@@ -35,7 +35,7 @@ const TelaAgendamento = () => {
                     </tr>
                 </table>
                 <div>
-                    <button>
+                    <button className="button-1">
                         <a href="#" className="home-btn">Agendar</a>
                     </button>
                 </div>
