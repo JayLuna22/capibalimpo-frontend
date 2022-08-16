@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "../components/navBar";
 import '../css/tela-agendamento.css'
+import Footer from "../components/footer";
 
 
 const TelaAgendamento = () => {
@@ -39,6 +40,9 @@ const TelaAgendamento = () => {
                         <a href="#" className="home-btn">Agendar</a>
                     </button>
                 </div>
+            </div>
+            <div>
+                <Footer/>
             </div>
         </div>
     )

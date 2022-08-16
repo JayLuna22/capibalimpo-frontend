@@ -8,6 +8,7 @@ import Login from './pages/tela-login.js'
 import TelaPerfil from './pages/tela-perfil'
 import Apoiador from './pages/tela-apoiador';
 import TelaAgendamento from './pages/tela-agendamento'
+import Colaboradores from './pages/tela-colaboradores';
 
 
 class App extends Component {
@@ -22,6 +23,7 @@ class App extends Component {
           <Route path='/perfil'element={<TelaPerfil />} />
           <Route path='/apoio' element={<Apoiador />} />
           <Route path='/agendamento' element={<TelaAgendamento />} />
+          <Route path='/colaboradores' element={<Colaboradores />} />
         </Routes>
       </div>
     );

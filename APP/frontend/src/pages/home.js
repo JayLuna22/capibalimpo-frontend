@@ -1,7 +1,8 @@
 import React from 'react';
 import './../css/tela-home.css';
 import logoHome from '../imagens/logo.png';
-import NavBar from '../components/navBar'; 
+import NavBar from '../components/navBar';
+import Footer from '../components/footer';
 
 const Home = () => {
     return (
@@ -21,6 +22,9 @@ const Home = () => {
                     </div>
                 </section>
             </main>
+            <div>
+                <Footer/>
+            </div>
         </div>
     )
 }

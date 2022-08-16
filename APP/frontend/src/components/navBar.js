@@ -7,11 +7,11 @@ import icon from '../imagens/icon-perfil.png';
     return (
         <div>
             <nav class="navigation">
-            <a href="" class="logo">CapibaLimpo</a>
+            <a href="/home" class="logo">CapibaLimpo</a>
             <ul class="nav-menu">
                 <li class="nav-item"><a href="/home">Home</a></li>
                 <li class="nav-item"><a href="/agendamento">Agendamento</a></li>
-                <li class="nav-item"><a href="">Apoiadores</a></li>
+                <li class="nav-item"><a href="/colaboradores">Apoiadores</a></li>
                 <li class="nav-item"><a href="">Sobre nós</a></li>
                 <li class="nav-icon">
 
