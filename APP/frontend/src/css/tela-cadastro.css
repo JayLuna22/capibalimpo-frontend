@@ -33,8 +33,8 @@
 }
 .cadastro-title{
   background-color: transparent;
-  padding-top: 20px;
-  padding-bottom: 30px;
+  padding-top: 6%;
+  padding-bottom: 8%;
   color: #0f3504;
   font-size: 24px;
   text-align: center;
@@ -60,17 +60,15 @@
   height: 40px;
   border: 2px solid #d6d6d6;
   border-radius: 5px;
-  width: 300px;
+  width: 20vw;
   margin-bottom: 6px;
-    }
-
+}
     .input-texto:hover{
       height: 40px;
-      border: 2px solid #7fda89;
+      border: 2px solid #78ae62;
       border-radius: 5px;
-      width: 300px;
       
-    }
+  }
 
     .btn-cadastro{
       background-color: transparent;
@@ -81,7 +79,7 @@
     }
   
     .botao-submit{
-    width: 150px;
+    width: 12vw;
     margin-top: 10px;
     margin-bottom: 5px;
     padding: 7px;
