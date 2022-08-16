@@ -1,7 +1,6 @@
 table {
     margin: auto;
     width: 100%;
-    border-radius: 10px;
     padding: 10%;
 }
 
@@ -11,6 +10,7 @@ th, td {
     text-align: center;
     border-bottom: 1px solid #ddd;
     background-color: rgba(221, 221, 221, 0.26);
+    border-radius: 5px;
 }
 
 tr:hover {background-color: rgb(135, 182, 235);}
@@ -26,8 +26,7 @@ input {
 
 button{
     border: none;
-    display: flex;
     margin-right: 10%;
     float: right;
-    padding-bottom: 50%;
+    margin-top: -5%;
 }
