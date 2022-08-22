@@ -10,7 +10,7 @@ const TelaInicial = () => {
         <div>
             <section id="container">
                 <section class="box">
-                    <img class="icon"
+                    <img class="icon-inicial" 
                         src={voluntario}/><br/>
                     <button class="button">
                         <a href="/login">
@@ -19,7 +19,7 @@ const TelaInicial = () => {
                     </button>
                 </section>
                 <section class="box">
-                    <img class="icon"
+                    <img class="icon-inicial"
                         src={apoiador}/><br/>
                     <button class="button">
                         <a href="/apoio">
@@ -28,7 +28,7 @@ const TelaInicial = () => {
                     </button>
                 </section>
                 <section class="box">
-                    <img class="icon"
+                    <img class="icon-inicial"
                         src={adm}/><br/>
                     <button class="button">
                         <a href="/loginAdm">

@@ -1,8 +1,6 @@
 import React from "react";
 import './../css/navBar.css';
 import icon from '../imagens/icon-perfil.png';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
 
  const NavBar = () =>{
     
